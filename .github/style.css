@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: hidden;
+}
+.main-container {
+  background: url("../Imgs/header-shapes\ mobile.svg");
+  height: 100vh;
+  padding: 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px;
+}
+.headline {
+  padding: 20px;
+  margin: 20px;
+}
+h1, h3, h4, span {
+  color: blue;
+}
+h1 {
+  font-size: 45px;
+  margin: 30px 5px 2px; 
+}
+p {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 300;
+}
+h3 {
+  font-weight: bolder;
+}
+h4 {
+  margin: 15px 5px;
+}
+.icons {
+  display:flex;
+  margin-left: 37px;
+}
+a {
+  display: flex;
+  margin-right: 20px;
+}
