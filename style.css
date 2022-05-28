@@ -10,7 +10,7 @@ body {
 }
 
 .main-container {
-  background: url("../Imgs/header-shapes\ mobile.svg");
+  background: url("/Imgs/header-shapes\ background\ mobile.svg");
   background-size: cover;
   height: 100vh;
   min-width: 375px;
