@@ -6,20 +6,19 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   width: 375px;
 }
 
-
-.main-container{
+.main-container {
   background-color: white;
   margin-bottom: 8px;
   padding: 20px;
 }
 
 header {
-    padding-top: 10px;
-    background-color: white;
+  padding-top: 10px;
+  background-color: white;
 }
 
 .first_section {
@@ -27,9 +26,9 @@ header {
   width: 375px;
   border-radius: 0 0 0 100px;
   margin-bottom: 50px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   height: 718px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 main {
@@ -41,7 +40,7 @@ main {
 a,
 span {
   text-decoration: none;
-  color: #6070FF;
+  color: #6070ff;
   font-weight: bolder;
 }
 
@@ -50,6 +49,13 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 24px 0 24px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  font-weight: 700;
 }
 
 .headline {
@@ -85,19 +91,16 @@ h5 {
   font-weight: 400;
 }
 
-.second_section{
+.second_section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 68px;
   margin-left: -10px;
-
 }
 
 .icons {
   margin-left: 8px;
-
-  
 }
 
 li {
@@ -153,15 +156,15 @@ a {
 }
 
 .About {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    height: 1180px;
-    background-color: white;
-    margin-bottom: 150px;
-    padding-bottom: -18px;
-    border-radius: 0 70px 0 0;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 1180px;
+  background-color: white;
+  margin-bottom: 150px;
+  padding-bottom: -18px;
+  border-radius: 0 70px 0 0;
+  margin-top: 50px;
 }
 
 .about-top {
@@ -284,11 +287,11 @@ h3 {
 }
 
 .framelist {
-    width: 375px;
-    background-color: white;
+  width: 375px;
+  background-color: white;
 }
 
-.listfram {    
+.listfram {
   display: flex;
   background-color: white;
   flex-direction: column;
@@ -314,7 +317,7 @@ h3 {
   padding-left: 25px;
   min-height: 72px;
   font-size: 500;
-  border-bottom: solid 1px #DFE1E6;
+  border-bottom: solid 1px #dfe1e6;
 }
 
 .listname {
@@ -399,6 +402,7 @@ form {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
+
   /* background-size: contain; */
   margin: 8%;
   align-items: center;
@@ -496,42 +500,33 @@ input {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}  
-
-h2{
-  font-size: 32px;
-  line-height: 44px;
-  color: #172B4D;
-  font-weight: 700;
 }
 
-.w1-caption p{
+.w1-caption p {
   font-weight: 900px;
   font-size: 13px;
   line-height: 16px;
   margin-left: -1px;
 }
 
-.w1-dot p{
-  color: #7A869A;
+.w1-dot p {
+  color: #7a869a;
   font-size: 13px;
 }
+
 .w1-information {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 327px;
   background: #fff;
   height: 76px;
   width: 295px;
-  left: 0px;
+  left: 0;
   top: 92px;
   margin-bottom: 12px;
   margin-top: 10px;
   font-size: 17px;
-  
 }
-
 
 .w1-button {
   box-sizing: border-box;
@@ -546,14 +541,17 @@ h2{
   border-radius: 8px;
   color: #6070ff;
   background-color: white;
-  
 }
 
-.btn1 , .btn2, .btn3, .btn4 {
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
   display: flex;
   color: aqua;
   margin-top: -32px;
 }
+
 .Works3 {
   box-sizing: border-box;
   display: flex;
@@ -676,22 +674,6 @@ button {
   gap: 5px;
 }
 
-.w4-information {
- 
-1:34
- display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  background: #fff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-left: -15px;
-}
-
 .w4-button {
   box-sizing: border-box;
   display: flex;
@@ -728,6 +710,7 @@ button {
   margin-bottom: 7px;
   margin-top: 100px;
 }
+
 .Work2-container {
   box-sizing: border-box;
   display: flex;
@@ -759,11 +742,11 @@ button {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}  
+}
 
 .w1-button li {
-      display: inline;
-      font-size: 15px;
-      padding-right: 9px;
-      padding-top: 9px;
+  display: inline;
+  font-size: 15px;
+  padding-right: 9px;
+  padding-top: 9px;
 }
