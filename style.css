@@ -372,7 +372,7 @@ footer {
   align-content: flex-start;
   background-image: url(./Imgs/Contact\ me.svg);
   background-repeat: no-repeat;
-  width: 120%;
+  width: 100vw;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -754,13 +754,17 @@ button {
   body{
     width: 100vw;
   }
+  .material-icons{
+    display: none;
+  }
   .topnav{
-    margin-right: 50px
+    margin-right: 50px;
+    display: inline;
+    
   }
   .topnav a{
     margin-right: 15px;
   }
-  
   .first_section{
     width: 100vw;
     padding-left: 100px;
@@ -769,10 +773,72 @@ button {
   .headline p{
     width: 40vw;
   }
-.About{
-  width: 100vw;
-  display: flex;
-  align-content: center;
-}
+
+  .second_section{
+    display: none;
   }
-  
+
+  #second-section-desktop{
+    display: contents;
+  }
+  .page1, .page2, .page3{
+    display: flex;
+    gap: 10%;
+    padding: 0 100px;
+    height: 60vh;
+    border: 2px solid blue;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .page2, .page3{
+    margin-top: 50px;
+  }
+  .page2 #button, .page3 #button{
+    border: 1px solid #6070FF;
+    background: transparent;
+    color: #6070FF
+    margin-top: 20px;
+    padding: 12px 24px;
+  }
+  .page2 .img-side img, .page3 .img-side img{
+    margin-top: 60px ;
+  }
+  .text-side h2{
+   margin-top: 50px;
+  }
+  .text-side ul{
+    margin-top: 10px;
+  }
+  .text-side ul li{
+    list-style: circle;
+  }
+  .first{
+    font-weight: bold;
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .text-side p{
+    margin-top: 25px;
+    width: 30vw;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .list2 li:first-child{
+    margin-left: 0;
+  }
+  .list2{
+    color: #6070FF;
+  }
+  .list2 li{
+    background-color: #dee3f4;
+    padding: 5px;
+  }
+  #button{
+    background-color: #6070FF;
+    border-radius: 3px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    padding: auto 18px;
+  }
