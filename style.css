@@ -344,7 +344,6 @@ textarea {
   display: none;
 }
 
-
 /* Desktop */
 @media screen and (min-width: 600px) {
   #container {
