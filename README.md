@@ -44,7 +44,11 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/eudondian)
 - Twitter: [@twitterhandle](https://twitter.com/eudondian)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/esther-udondian-186849119/)
+
 👤 **Author2**
+ Esmatullah Ahmadzai
+GitHub: @https://github.com/eaesmat
+LinkedIn: https://www.linkedin.com/in/esmatullah-ahmadzai-56bb9423b/
 
 
 ## 🤝 Contributing
