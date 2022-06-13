@@ -19,7 +19,7 @@ p {
 }
 
 #wrapper {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: rgba(255, 255, 2255, 0.9);
   border-bottom-left-radius: 100px;
@@ -578,7 +578,7 @@ textarea {
   }
 
   .btn-div {
-    margin-left: 300px;
+    margin-left: 200px;
   }
 
   .form-btn {
