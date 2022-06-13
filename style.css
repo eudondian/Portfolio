@@ -352,7 +352,7 @@ textarea {
 
   #wrapper {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     border-bottom-left-radius: 100px;
     position: relative;
     background-image: url(/assets/wrapper-background/Header\ bg.svg);
