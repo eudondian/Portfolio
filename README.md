@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]( https://eudondian.github.io/Portfolio/)
+[Live Demo Link](https://eudondian.github.io/Portfolio/)
 
 
 ## Getting Started
