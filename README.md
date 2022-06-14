@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
 > Description the project.
 
@@ -9,6 +9,8 @@
 
 - HTML
 - CSS
+- FIGMA
+- LINTERS
 
 ## Live Demo (if available)
 
