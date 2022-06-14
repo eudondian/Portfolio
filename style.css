@@ -352,7 +352,7 @@ textarea {
 
   #wrapper {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     border-bottom-left-radius: 100px;
     position: relative;
     background-image: url(/assets/wrapper-background/Header\ bg.svg);
@@ -578,7 +578,7 @@ textarea {
   }
 
   .btn-div {
-    margin-left: 200px;
+    margin-left: 150px;
   }
 
   .form-btn {
