@@ -58,14 +58,16 @@ p {
 }
 
 .mobile-nav {
-
+  height: 0;
+  overflow: hidden;
 }
 
-.mobile-nav img {
+#closeHam {
   position: absolute;
   top: 5px;
   right: 64px;
   cursor: pointer;
+  display: none;
 }
 
 
@@ -74,10 +76,18 @@ p {
   list-style-type: none;
 }
 
-.hamburgerMenu {
+.header {
   height: 100%;
   overflow: visible;
   background: #6070FF;
+}
+
+.open {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 64px;
+  cursor: pointer;
 }
 
 /* Headline Section */
