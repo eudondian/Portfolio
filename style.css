@@ -57,7 +57,31 @@ p {
   margin: 10px ;
 }
 
+.mobile-nav {
+
+}
+
+.mobile-nav img {
+  position: absolute;
+  top: 5px;
+  right: 64px;
+  cursor: pointer;
+}
+
+
+.mobileMenu-icon li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.hamburgerMenu {
+  height: 100%;
+  overflow: visible;
+  background: #6070FF;
+}
+
 /* Headline Section */
+
 #headline {
   margin-top: 2rem;
   padding-left: 1rem;
@@ -369,8 +393,6 @@ textarea {
     margin-left: 100px;
     height: 20vh;
   }
-  
- 
 
   #headline {
     margin: 100px;
