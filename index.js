@@ -1,6 +1,9 @@
-const hamburger = document.querySelector('.menu-icon');
-const closeHamburger = document.querySelector('.closeimage');
+const hamburger = document.querySelector('.mobile-menu');
+const closeHamburger = document.querySelector('.desktop-nav-hidden');
+const nav = document.querySelector('.desktop-nav-hidden');
+
 hamburger.addEventListener('click', () => {
-  hamburger.classList.add('header');
+  nav.classList.add('openMenu');
   closeHamburger.classList.add('open');
+  hamburger.classList.remove('uil');
 });
