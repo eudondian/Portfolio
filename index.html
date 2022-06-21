@@ -13,52 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b2291adafa.js" crossorigin="anonymous"></script>
     
-    <title>Document</title>
+    <title>Esther's Portfolio</title>
 </head>
 <body>
- <div id="container">
-        
-    <section id="wrapper">
-            <!--Header Section -->
-        <section id="header">
-            <nav class="nav">
-                <h3 class="logo">My Logo</h3>
-                <div class="menu-icon">
+        <!--Header Section -->
+        <header>
+            <div class="container">     
+                <div class="mobile-logo">
+                    <h3 id="logo">My Logo</h3>
+                </div>
+
+                <div class="mobile-menu">
                     <i class="uil uil-bars"></i>
                 </div> 
-            </nav>
 
-            <div class="mobile-nav">
-                <img id="closeHam" class="closeimage" src="./assets/closeIcon.png" alt="Close Menu">
-                <ul class="mobileMenu-icon">
-                   <li><a href="">Portfolio</a></li>
-                   <li><a href="">About</a></li>
-                   <li><a href="">Contact</a></li>
-                </ul>
+                <nav class="desktop-nav-hidden">
+                    <img id="closeHam" class="closeimage" src="./assets/closeIcon.png" alt="Close Menu">
+                    <ul class="nav-icon">
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
 
-        </section>
-        
-        <!-- Header Desktop -->
-        <section id="header-desktop">
-            <nav class="nav">
-               <div>
-                    <h3 class="logo">My Logo</h3>
-               </div> 
-               <div>
-                 <ul class="menu-icon">
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                 </ul>
-                </div>
-            </nav>
-        </section>
+        </header>
 
-        <!-- Headline Section -->
+            <!-- Headline Section -->
+
         <section id="headline">
             <h1 class="intro">I’m Esther <br> Glad to see you!</h1>
-            <p>
+            <p class="text">
                 I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
             </p>
 
@@ -73,7 +58,6 @@
                 
             </ul>
         </section>
-    </section>
 
     <!-- Works Section -->
     <section id="cards">
@@ -322,9 +306,7 @@
            </div>
         </div>
         
-    </section>
- </div>
-    
+    </section>    
  <script src="./index.js"></script>
 </body>
 </html>
