@@ -4,6 +4,8 @@ const nav = document.querySelector('.desktop-nav-hidden');
 
 hamburger.addEventListener('click', () => {
   nav.classList.add('openMenu');
-  closeHamburger.classList.add('open');
-  hamburger.classList.remove('uil');
+});
+
+closeHamburger.addEventListener('click', () => {
+  nav.classList.remove('openMenu');
 });
