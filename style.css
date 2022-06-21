@@ -58,44 +58,67 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   color: #6070ff;
-  width: 100%;
+  width: 93%;
   margin: 0 auto;
+}
+
+.mobile-menu i {
+  position: absolute;
+  top: 5px;
+  right: 64px;
+  cursor: pointer;
 }
 
 .desktop-nav-hidden {
   display: block;
+  width: 100%;
+  height: 0;
+  margin-left: 1%;
+  overflow: hidden;
+  padding-top: 40px;
 }
 
-#closeHam {
-  display: none;
-  background-color: red;
-  position: absolute;
-  top: 5px;
-  right: 64px;
-  cursor: pointer;
+.nav-icon li {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  margin-left: 10px;
+
 }
 
-.header {
+.nav-icon li a {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.openMenu {
+  position: fixed;
+  background: #6070ff;
   height: 100%;
   overflow: visible;
-  background: #6070FF;
+  width: 108%;
+  margin-left: -4%;
 }
 
 .open {
   display: block;
-  position: absolute;
-  top: 5px;
-  right: 64px;
   cursor: pointer;
+}
+
+.blur {
+  background: #fff;
 }
 
 /* Headline Section */
 
 #headline {
-  margin-top: 2rem;
+  margin-top: 8rem;
   padding-left: 1rem;
+  top: 0;
 }
 
 #headline h1 {
@@ -367,10 +390,6 @@ textarea {
   display: none;
 }
 
-
-
-
-
 /* Desktop */
 @media screen and (min-width: 600px) {
    #wrapper {
@@ -403,9 +422,23 @@ textarea {
     margin: 5px auto;
   }
 
+  .desktop-nav-hidden {
+    width: 30%;
+    height: 40px;
+  }
+
   .nav-icon li {
     display: inline-block;
     padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-icon li a {
+    color: #344563;
   }
 
   .mobile-menu i {
