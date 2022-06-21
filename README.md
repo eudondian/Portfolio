@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
 > Description the project.
 
@@ -9,10 +9,12 @@
 
 - HTML
 - CSS
+- FIGMA
+- LINTERS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://eudondian.github.io/Portfolio/)
 
 
 ## Getting Started
@@ -50,7 +52,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [krisbobo](https://github.com/krisbobo)
 - Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
 - LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
-
 
 ## 🤝 Contributing
 
