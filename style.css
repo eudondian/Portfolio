@@ -52,6 +52,7 @@ header {
   right: 0;
   left: 0;
   background: rgba(255, 255, 2255, 0.7);
+  height: 5%;
 }
 
 .container {
@@ -61,23 +62,25 @@ header {
   align-items: flex-start;
   color: #6070ff;
   width: 93%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
-.mobile-menu i {
+.mobile-menu .uil {
   position: absolute;
   top: 5px;
-  right: 64px;
+  right: 40px;
   cursor: pointer;
 }
 
 .desktop-nav-hidden {
-  display: block;
+  display: none;
   width: 100%;
-  height: 0;
-  margin-left: 1%;
-  overflow: hidden;
+  height: 100%;
   padding-top: 40px;
+}
+
+.closeimage {
+  padding-left: 350px;
 }
 
 .nav-icon li {
@@ -87,71 +90,67 @@ header {
   line-height: 44px;
   align-items: center;
   margin-left: 10px;
-
+  z-index: 100;
 }
 
 .nav-icon li a {
   color: #fff;
   padding: 5px 0;
+  z-index: 100;
 }
 
 .openMenu {
-  position: fixed;
-  background: #6070ff;
-  height: 100%;
+  display: block;
+  background-color: rgba(96, 112, 255, 0.9);
+  position: absolute;
+  top: 0;
+  padding: 40px 10px;
+  height: 100vh;
   overflow: visible;
   width: 108%;
   margin-left: -4%;
+  backdrop-filter: blur(4px);
 }
 
 .open {
-  display: block;
   cursor: pointer;
-}
-
-.blur {
-  background: #fff;
 }
 
 /* Headline Section */
 
 #headline {
-  margin-top: 8rem;
-  padding-left: 1rem;
-  top: 0;
+  padding: 100px 20px 100px 20px;
+  background: #fff;
+  border-bottom-left-radius: 110px;
 }
 
-#headline h1 {
-  font-size: 24px;
-  max-width: 10rem;
-  color: #333231;
-  z-index: 1;
-  position: relative;
+.intro {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #172B4D;
+  padding: 40px 40px 15px 15px;
 }
 
-.lang p {
-  padding-left: 12px;
-}
-
-#headline p {
+.text {
   width: 90%;
-  position: relative;
-  z-index: 1;
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
-#headline h4 {
-  margin-top: 8px;
+.connect {
   color: #6070ff;
   font-weight: 500;
-  position: relative;
-  z-index: 1;
+  padding: 10px 0px 10px 12px;
 }
 
 .headline-icons {
   display: flex;
-  margin-top: 15px;
-  position: relative;
-  z-index: 1;
+  padding-left: 12px;
 }
 
 .headline-icons li {
@@ -392,26 +391,10 @@ textarea {
 
 /* Desktop */
 @media screen and (min-width: 600px) {
-   #wrapper {
-    width: 100%;
-    height: 300vh;
-    border-bottom-left-radius: 100px;
-    position: relative; 
-    background-image: url(/assets/wrapper-background/Header\ bg.svg); 
-    background-repeat: no-repeat;
-  } 
-
-   #wrapper::after {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150%;
-    z-index: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-     animation: 5s infinite alternate anima;
-  } 
+  header {
+    height: 8%;
+    border-bottom: 1px solid #ebebff;
+  }
 
   .container {
     display: flex;
@@ -420,11 +403,14 @@ textarea {
     flex-direction: row;
     max-width: 85%;
     margin: 5px auto;
+    text-align: center;
   }
 
   .desktop-nav-hidden {
-    width: 30%;
+    width: 23%;
     height: 40px;
+    display: block;
+    padding: 5px 10px;
   }
 
   .nav-icon li {
@@ -450,19 +436,42 @@ textarea {
   }
 
   #headline {
-    margin: 100px;
+    margin-top: 0rem;
     height: 100vh;
-    margin-left: 150px;
+    background: #fff;
+    padding: 182px;
+    width: 100%;
+    border-bottom-left-radius: 110px;
   }
 
-  #headline h1 {
-    font-size: 32px;
-    max-width: 50rem;
-    color: #333231;
+  .intro {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091E42;
+    padding: 40px;
   }
 
-  .container p {
-    width: 95%;
+  .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    padding: 10px 10px 10px 40px;
+  }
+
+  .connect {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+    padding: 10px 10px 10px 40px;
+  }
+
+  .headline-icons {
+    padding-left: 35px;
   }
 
   .footer p {
@@ -470,29 +479,6 @@ textarea {
     margin: auto 30px;
     color: whitesmoke;
     z-index: 1;
-  }
-
-  #headline p {
-    width: 65%;
-    margin-top: 12px;
-  }
-
-  #headline h4 {
-    width: 65%;
-    margin-top: 16px;
-  }
-
-  #header {
-    display: none;
-  }
-
-  #header-desktop {
-    display: flex;
-    padding-top: 30px;
-  }
-
-  #header-desktop ul {
-    display: flex;
   }
 
   .card-list-one li {
