@@ -23,15 +23,15 @@
                 <h3 id="logo">My Logo</h3>
             </div>
             <div class="mobile-menu">
-                <i class="uil uil-bars"></i>
+                <i class="uil uil-bars navtoggle"></i>
             </div> 
 
             <nav class="desktop-nav-hidden">
-                <img id="closeHam" class="closeimage" src="./assets/closeIcon.png" alt="Close Menu">
+                <img id="closeHam" class="closeimage navtoggle" src="./assets/closeIcon.png" alt="Close Menu">
                 <ul class="nav-icon">
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#cards">Portfolio</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,7 +60,7 @@
     <!-- Works Section -->
     <section id="cards">
         <div class="card">
-            <img src="./assets/Card1.png" alt="Card One" style="width:100%">
+            <img src="./assets/Card1.png" alt="Card One">
             <div class="container">
                 <h2><b>Tonic</b></h2>
                     <ul class="card-list-one">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="./assets/Card2.png" alt="Card Two" style="width:100%">
+            <img src="./assets/Card2.png" alt="Card Two">
             <div class="container">
                 <h2><b>Multi-Post Stories</b></h2>
                     <ul class="card-list-one">
@@ -96,7 +96,7 @@
             <div class="card-button">See Project</div>
         </div>
         <div class="card">
-            <img src="./assets/card3.png" alt="Card Three" style="width:100%">
+            <img src="./assets/card3.png" alt="Card Three">
             <div class="container">
                 <h2><b>Tonic</b></h2>
                     <ul class="card-list-one">
@@ -114,7 +114,7 @@
             <div class="card-button">See Project</div>
         </div>
         <div class="card">
-            <img src="./assets/card4.png" alt="Card Four" style="width:100%">
+            <img src="./assets/card4.png" alt="Card Four">
             <div class="container">
                 <h2><b>Multi-Post Stories</b></h2>
                     <ul class="card-list-one">
@@ -292,12 +292,9 @@
            <div>
             <div class="form-div">
                 <form action="https://formspree.io/f/mqknjegg">
-                    <label for="name"></label>
                     <input type="text" placeholder="name" />
-                    <label for="email"></label>
                     <input type="email" placeholder="name@mail.com" />
-                    <label for="message"></label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                    <textarea name="name" id="name" cols="30" rows="10" placeholder="Write your message here"></textarea>
                     <button class="form-btn">Get In Touch</button>
                 </form> 
             </div>
