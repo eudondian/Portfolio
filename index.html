@@ -292,10 +292,12 @@
            <div>
             <div class="form-div">
                 <form action="https://formspree.io/f/mqknjegg">
-                    <input type="text" placeholder="name" />
-                    <input type="email" placeholder="name@mail.com" />
-                    <textarea name="name" id="name" cols="30" rows="10" placeholder="Write your message here"></textarea>
-                    <button type="submit"  class="form-btn">Get In Touch</button>
+                    <ul>
+                        <li><input class="f-name" type="text" value="" name="Name" placeholder="Name" maxlength="30" required></li>
+                        <li><input class="f-mail" type="email" value="" name="Email" placeholder="email@email.com" required></li>
+                        <li><textarea class="form-text" name="Message" placeholder="Enter Text Here" maxlength="500" required></textarea></li>
+                        <li class="button-container"><button class="form-btn" type="submit">Get In Touch</button></li>
+                    </ul>
                 </form> 
             </div>
            </div>
