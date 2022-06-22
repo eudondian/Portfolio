@@ -70,6 +70,7 @@ header {
   top: 5px;
   right: 40px;
   cursor: pointer;
+  font-size:x-large;
 }
 
 .desktop-nav-hidden {
@@ -311,7 +312,7 @@ h5 {
   background-color: #6070ff;
   position: relative;
   width: 100%;
-  border-top-left-radius: 65px;
+  border-top-left-radius: 110px;
 }
 
 #footer::after {
@@ -325,7 +326,12 @@ h5 {
   background-image: url(/assets/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  border-top-left-radius: 85px;
+  border-top-left-radius: 65px;
+}
+.contact p{
+  color: whitesmoke;
+  padding: left 20px;
+  padding-top: 10px;
 }
 
 .footer {
@@ -584,7 +590,7 @@ textarea {
   #footer {
     display: flex;
     flex-direction: column;
-    background-color: rgba(98, 48, 236, 0.9);
+    background-color: #6070ff;
     position: relative;
     width: 100%;
     border-top-left-radius: 100px;
@@ -600,7 +606,7 @@ textarea {
     background-image: url(/assets/wrapper-background/Header\ bg@2x.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-top-left-radius: 65px;
+    border-top-left-radius: 110px;
   }
 
   .footer {
