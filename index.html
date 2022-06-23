@@ -13,51 +13,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b2291adafa.js" crossorigin="anonymous"></script>
     
-    <title>Document</title>
+    <title>Esther's Portfolio</title>
 </head>
 <body>
- <div id="container">
-        
-    <section id="wrapper">
-            <!--Header Section -->
-        <section id="header">
-            <nav class="nav">
-                <h3 class="logo">My Logo</h3>
-                <div class="menu-icon">
-                    <i class="uil uil-bars"></i>
-                </div>
-            </nav>
-        </section>
-        
-        <!-- Header Desktop -->
-        <section id="header-desktop">
-            <nav class="nav">
-                <h3 class="logo">My Logo</h3>
-                <ul class="menu-icon">
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+    <!--Header Section -->
+    <header>
+        <div class="container">     
+            <div class="mobile-logo">
+                <h3 id="logo">My Logo</h3>
+            </div>
+            <div class="mobile-menu">
+                <i class="uil uil-bars navtoggle"></i>
+            </div> 
+
+            <nav class="desktop-nav-hidden">
+                <img id="closeHam" class="closeimage navtoggle" src="./assets/closeIcon.png" alt="Close Menu">
+                <ul class="nav-icon">
+                    <li><a href="#cards">Portfolio</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
+
+    </header>
 
         <!-- Headline Section -->
-        <section id="headline">
-            <h1 class="intro">I’m Esther <br> Glad to see you!</h1>
-            <p>
-                I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
 
-            <h4>LET’S CONNECT</h4>
+    <section id="headline">
+        <h1 class="intro">I’m Esther <br> Glad to see you!</h1>
+        <p class="text">
+            I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+
+        <h4 class="connect">LET’S CONNECT</h4>
+
             <ul class="headline-icons">
                 <li><a href=""><i class="uil uil-twitter"></i></a></li>
                 <li><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
                 <li><a href=""><i class="uil uil-medium-m"></i></a></li>
                 <li><a href=""><i class="uil uil-github"></i></a></li>
-                <li><a href=""><i class='fa fa-angellist'></i></a></li>
-                
+                <li><a href=""><i class='fa fa-angellist'></i></a></li>   
             </ul>
-        </section>
     </section>
 
     <!-- Works Section -->
@@ -117,7 +114,7 @@
             <div class="card-button">See Project</div>
         </div>
         <div class="card">
-            <img src="./assets/card4.png" alt="Card Four" width="700">
+            <img src="./assets/card4.png" alt="Card Four">
             <div class="container">
                 <h2><b>Multi-Post Stories</b></h2>
                     <ul class="card-list-one">
@@ -170,8 +167,9 @@
                     <li>javaScript</li>
                 </ul>
                 <div class="card-button">See Project</div>
+                
             </div>
-            <img src="./assets/card2.svg" alt="Card Two" width="700">
+            
         </div>
         <div class="card">
             <img src="./assets/DV-card3.svg" alt="Card Three" width="700">
@@ -235,7 +233,7 @@
 
         <div class="languages">
                 <div class="lang-caption">
-                    <h5 >Languages</h5>
+                    <h5>Languages</h5>
                     <i class="uil uil-angle-down"></i>
                 </div>
             <div class="lang-lang">
@@ -243,7 +241,7 @@
                     <img src="./assets/javaScript-logo.svg" alt= "javaScript" width="30" class="lang-img"/>
                     <p>Javascript</p>
                 </div> 
-                <div class="lang"> 
+                <div class="lang">
                     <img src="./assets/HTML-logo.svg" alt= "HTML" width="30" class="lang-img"/>
                     <p>HTML</p>
                 </div> 
@@ -294,20 +292,18 @@
            <div>
             <div class="form-div">
                 <form action="https://formspree.io/f/mqknjegg">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="name" />
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="name@mail.com" />
-                    <label for="message"></label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
-                  <div class="btn-div"><button type="submit" class="form-btn">Get In Touch</button> </div>
+                    <ul>
+                        <li><input class="f-name" type="text" value="" name="Name" placeholder="Name" maxlength="30" required></li>
+                        <li><input class="f-mail" type="email" value="" name="Email" placeholder="email@email.com" required></li>
+                        <li><textarea class="form-text" name="Message" placeholder="Enter Text Here" maxlength="500" required></textarea></li>
+                        <li class="button-container"><button class="form-btn" type="submit">Get In Touch</button></li>
+                    </ul>
                 </form> 
             </div>
            </div>
         </div>
         
-    </section>
- </div>
-    
+    </section>    
+ <script src="./script/index.js"></script>
 </body>
-</html>  
+</html>

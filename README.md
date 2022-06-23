@@ -47,11 +47,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/eudondian)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/esther-udondian-186849119/)
 
-👤 **Author2**
- Esmatullah Ahmadzai
-GitHub: @https://github.com/eaesmat
-LinkedIn: https://www.linkedin.com/in/esmatullah-ahmadzai-56bb9423b/
+👤 **Kiyong Bohbo**
 
+- GitHub: [krisbobo](https://github.com/krisbobo)
+- Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
+- LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
 ## 🤝 Contributing
 
