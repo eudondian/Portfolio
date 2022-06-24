@@ -253,7 +253,7 @@ caption {
 #footer {
   margin-top: 100px;
   text-align: center;
-  background-color: rgba(98, 48, 236, 0.9);
+  background-color: #6070ff;
   position: relative;
   width: 100%;
   border-top-left-radius: 65px;
@@ -316,7 +316,7 @@ textarea {
   width: 8rem;
   text-align: center;
   background: white;
-  z-index: 1;
+  z-index: 11;
   position: relative;
 }
 
@@ -494,6 +494,64 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+/* form */
+.form-control {
+  margin-bottom: 3px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px;
+  height: 40px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 22px;
+  right: 60px;
+  z-index: 11;
+}
+
+.form-control.success i.uil-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.uil-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
 }
 
 /* Desktop */
@@ -708,7 +766,7 @@ textarea {
     position: relative;
     width: 100%;
     border-top-left-radius: 100px;
-    height: 80vh;
+    height: 90vh;
     padding: 0 600px;
   }
 
@@ -756,6 +814,8 @@ textarea {
     border: none;
     background: white;
     z-index: 1;
+    max-width: 500ch;
+    column-width: 30%;
   }
 
   .form-btn {
@@ -767,7 +827,6 @@ textarea {
     padding: 10px 12px;
     width: 8rem;
     background: white;
-    z-index: 1;
   }
 
   ::placeholder {
