@@ -592,7 +592,7 @@ textarea {
     display: flex;
     flex-direction: column;
     background-color: #6070ff;
-    /* position: relative; */
+    position: relative;
     width: 100%;
     border-top-left-radius: 100px;
     padding: 0 600px;
