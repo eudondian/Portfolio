@@ -478,7 +478,7 @@ textarea {
   color: #6070ff;
   border-radius: 2px;
   padding: 5px 10px;
-  background: #EBEBFF;
+  background: #ebebff;
 }
 
 .popup button {
@@ -498,65 +498,62 @@ textarea {
 }
 
 .form-control {
-	margin-bottom: 3px;
-	padding-bottom: 20px;
-	position: relative;
+  margin-bottom: 3px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-
 .form-control input {
-	border: 2px solid #f0f0f0;
-	border-radius: 8px;
-	font-size: 14px;
-	padding: 10px;
-    border-radius: 3px;
-    height: 40px;    
-    
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px;
+  height: 40px;
 }
 
 .form-control input:focus {
-	outline: 0;
-	border-color: #777;
+  outline: 0;
+  border-color: #777;
 }
 
 .form-control.success input {
-	border-color: #2ecc71;
+  border-color: #2ecc71;
 }
 
 .form-control.error input {
-	border-color: #e74c3c;
+  border-color: #e74c3c;
 }
 
 .form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 22px;
-	right: 60px;
-    z-index: 11;
+  visibility: hidden;
+  position: absolute;
+  top: 22px;
+  right: 60px;
+  z-index: 11;
 }
 
 .form-control.success i.uil-check-circle {
-	color: #2ecc71;
-	visibility: visible;
+  color: #2ecc71;
+  visibility: visible;
 }
 
 .form-control.error i.uil-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+  color: #e74c3c;
+  visibility: visible;
 }
 
 .form-control small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 40px;
-	visibility: hidden;
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  visibility: hidden;
 }
 
 .form-control.error small {
-	visibility: visible;
+  visibility: visible;
 }
-    
+
 
 /* Desktop */
 @media screen and (min-width: 600px) {
@@ -584,7 +581,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0.9);
   }
 
-  
+
 
   /* .logo{
         animation: 5s infinite alternate anima;
@@ -834,21 +831,21 @@ textarea {
     z-index: 1;
   }
 
-  
-    .form-control i {
-        visibility: hidden;
-        position: absolute;
-        top: 22px;
-        right: 20px;
-        z-index: 11;
-    }
-    .form-control small {
-        color: #e74c3c;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: hidden;
-    }
+  .form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    z-index: 11;
+  }
+
+  .form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
 
   ::placeholder {
     padding-left: 10px;
