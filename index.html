@@ -126,6 +126,7 @@
           <button class="card-button" onclick="popup()">See Project</button>
         </div>
       </div>
+
       <div class="card">
         <img src="./assets/Card2.png" alt="Card Two" />
         <div class="container">
@@ -188,7 +189,6 @@
           </ul>
         </div>
         <button class="card-button" onclick="popup()">See Project</button>
-        
       </div>
     </section>
     <!-- Works Section Desktop -->
@@ -399,7 +399,69 @@
     </section>
 
     <!-- Footer Section -->
-   
+
+    <section id="footer">
+      <div class="footer">
+        <h2>Contact Me</h2>
+        <div>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+        <div>
+          <div class="form-div">
+            <form
+              id="form"
+              method="POST"
+              action="https://formspree.io/f/mqknjegg"
+            >
+              <div class="form-control">
+                <input
+                  class="f-name"
+                  type="text"
+                  value=""
+                  name="name"
+                  placeholder="Name"
+                  maxlength="30"
+                  required
+                />
+                <i class="uil uil-check-circle"></i>
+                <i class="uil uil-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <input
+                  class="f-mail"
+                  type="email"
+                  value=""
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <i class="uil uil-check-circle"></i>
+                <i class="uil uil-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+
+              <div class="form-control">
+                <textarea
+                  id="form-text"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-btn" type="submit">Get in Touch</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Popup -->
     <div class="popup" id="popup-1">
       <div class="overlay"></div>
@@ -411,7 +473,7 @@
           <li>Backend Dev</li>
           <li>2015</li>
         </ul>
-        <img src="/assets/Card1.png" alt="" />
+        <img src="./assets/Card1.png" alt="card one" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
           earum consequatur ut repudiandae atque aut magnam provident quos,
@@ -424,9 +486,11 @@
           <li class="popup-li">CSS</li>
           <li class="popup-li">Javascript</li>
         </ul>
-        <div class="popup-div">
-          <button>See Free</button>
-          <button>See Source</button>
+        <div>
+          <div class="popup-div">
+            <button>See Free <i class="uil uil-power"></i></button>
+            <button>See Source <i class="uil uil-github"></i></button>
+          </div>
         </div>
       </div>
     </div>
