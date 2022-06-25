@@ -24,7 +24,7 @@ const lowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 
 formSection.addEventListener('submit', (e) => {
   const userEmail = email.value.trim();
-  if (lowerCase(userEmail)) {
+  if (!lowerCase(userEmail)) {
     formSection.submit();
   } else {
     e.preventDefault();
