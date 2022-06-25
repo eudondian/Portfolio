@@ -7,12 +7,10 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
 
-document.querySelectorAll('.menu-item').forEach((n) =>
-  n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    mobileMenu.classList.remove('active');
-  })
-);
+document.querySelectorAll('.menu-item').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  mobileMenu.classList.remove('active');
+}));
 
 // Project Card Data
 const datacards = [
@@ -150,27 +148,21 @@ seeProjectBtn.forEach((button, index) => {
     // Populate Pop-up Modal
     const modalData = datacards[index];
     const modalTags = Array.from(
-      document.querySelectorAll('.works-modal .tag-item')
+      document.querySelectorAll('.works-modal .tag-item'),
     );
     const modalCounterImg = Array.from(
-      document.querySelectorAll('.works-modal .project-info img')
+      document.querySelectorAll('.works-modal .project-info img'),
     );
     const infoItems = Array.from(
-      document.querySelectorAll('.works-modal .project-info-item')
+      document.querySelectorAll('.works-modal .project-info-item'),
     );
 
-    document.querySelector('.works-modal .project-title').innerHTML =
-      modalData.project_title;
-    document.querySelector('.works-modal .project-info-title').innerHTML =
-      modalData.project_info_title;
-    document.querySelector('.works-modal .Project-img').src =
-      modalData.project_img;
-    document.querySelector('.works-modal .project-description').innerHTML =
-      modalData.project_description;
-    document.querySelector('.works-modal .see-live').href =
-      modalData.live_version;
-    document.querySelector('.works-modal .see-source').href =
-      modalData.source_code;
+    document.querySelector('.works-modal .project-title').innerHTML = modalData.project_title;
+    document.querySelector('.works-modal .project-info-title').innerHTML = modalData.project_info_title;
+    document.querySelector('.works-modal .Project-img').src = modalData.project_img;
+    document.querySelector('.works-modal .project-description').innerHTML = modalData.project_description;
+    document.querySelector('.works-modal .see-live').href = modalData.live_version;
+    document.querySelector('.works-modal .see-source').href = modalData.source_code;
 
     modalCounterImg.forEach((infoImg) => {
       infoImg.src = modalData.counter_image;
@@ -199,30 +191,7 @@ closeModalBtn.addEventListener('click', () => {
   body.style.overflow = 'auto';
 });
 
-// Email validation
-function showMessage(input, message, type) {
-  const msg = input.parentNode.querySelector('small');
-  msg.innerText = message;
-  return type;
-}
-
-function showError(input, message) {
-  return showMessage(input, message, false);
-}
-
-function showSuccess(input) {
-  return showMessage(input, '', true);
-}
-
-function hasValue(input, message) {
-  if (input.value.trim() === '') {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-
 // form validation
-
 const formSection = document.querySelector('#form');
 const email = document.querySelector('.f-mail');
 const errorHolder = document.querySelector('.error');
@@ -234,7 +203,6 @@ formSection.addEventListener('submit', (e) => {
     formSection.submit();
   } else {
     e.preventDefault();
-    errorHolder.innerText =
-      'Wrong Email! Email should be written in lowercase.';
+    errorHolder.innerText = 'Wrong Email! Email should be written in lowercase.';
   }
 });
