@@ -206,20 +206,3 @@ formSection.addEventListener('submit', (e) => {
     errorHolder.innerText = 'Wrong Email! Email should be written in lowercase.';
   }
 });
-
-// form validation
-
-const formSection = document.querySelector('#form');
-const email = document.querySelector('.f-mail');
-const errorHolder = document.querySelector('.error');
-const lowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
-
-formSection.addEventListener('submit', (e) => {
-  const userEmail = email.value.trim();
-  if (lowerCase(userEmail)) {
-    formSection.submit();
-  } else {
-    e.preventDefault();
-    errorHolder.innerText = 'Wrong Email! Email should be written in lowercase.';
-  }
-});
