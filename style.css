@@ -833,3 +833,18 @@ small {
     font-weight: bold;
   }
 }
+ newmobDESK-POPUP
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+small {
+  color: red;
+  margin-top: 5px;
+}
+ master
