@@ -4,215 +4,304 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esther's Portifolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@1,300&display=swap"
-      rel="stylesheet" />
-      <script src="https://kit.fontawesome.com/b2291adafa.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
-    </head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2291adafa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
   <body>
-    <header>
-      <nav class="nav-bar">
-        <div class="logo logo-rotated">
-          <a href="#">My Logo</a>
+    <div id="container">
+      <div id="mobile-nav">
+        <div class="nav__container">
+          <a href="./index.html" class="logo-mobile">My Logo</a>
+          <ul class="nav-menu">
+            <li><a href="#cards">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+          <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+          <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
-        <!-- <img src="./assets/Union.png" alt=""> -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#desktop-card">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      </div>
+    </div>
+    <section id="wrapper">
+      <!--Header Section -->
+      <!-- <section id="header">
+            <nav class="nav">
+                <h3 class="logo">My Logo</h3>
+                <div class="menu-icon">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </nav>
+        </section>
+        
+        <-- Header Desktop -->
+      <section id="header-desktop">
+        <nav class="nav">
+          <h3 class="logo">My Logo</h3>
+          <ul class="menu-icon">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
 
-        <!-- mobile menu -->
-        <ul class="mobile-menu">
-          <li class="menu-item"><a href="#mobile-card">Portfolio</a></li>
-          <li class="menu-item"><a href="#about">About</a></li>
-          <li class="menu-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="profile">
-        <article>
-          <h1 class="move-in">I’m Esther<br />Glad to see you!</h1>
-          <p class="fade-in">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
-          </p>
-        </article>
-        <h4 class="fade-in delay-3 opacity-0">Lets connect</h4>
-        <ul class="socials">
+      <!-- Headline Section -->
+      <section id="headline">
+        <h1 class="intro">
+          I’m Esther <br />
+          Glad to see you!
+        </h1>
+        <p class="headline-para">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+
+        <h4>LET’S CONNECT</h4>
+        <ul class="headline-icons">
           <li>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="uil uil-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="uil uil-linkedin-alt"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-maxcdn" aria-hidden="true"></i></a>
+            <a href=""><i class="uil uil-medium-m"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href=""><i class="uil uil-github"></i></a>
           </li>
           <li>
-            <a href="#"
-              ><i class="fa fa-hand-peace-o" aria-hidden="true"></i
-            ></a>
+            <a href=""><i class="fa fa-angellist"></i></a>
           </li>
         </ul>
       </section>
-    </main>
-
-    <!--Work Section-->
-    <section class="works" id="portfolio">
-      <h1></h1>
     </section>
 
-    <section class="modal-container">
-      <ul class="works-modal">
-        <li>
-          <div class="project-header">
-            <div class="modal-title-container">
-              <h1 class="project-title"></h1>
+    <!-- Works Section -->
+    <section id="cards"></section>
+    <!-- Works Section Desktop -->
+    <section id="cards-desktop"></section>
 
-              <i class="fas fa-times modal-close-button"></i>
-            </div>
-            <div class="project-info">
-              <h2 class="project-info-title"></h2>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
-            </div>
-          </div>
-        </li>
-        <li class="project-img-wrapper">
-          <img src="#" alt="" class="Project-img" />
-        </li>
-        <li class="modal-body">
-          <p class="project-description"></p>
-          <ul class="tags">
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-          </ul>
-          <div class="divider"></div>
-          <div class="action-container">
-            <button class="action-btn see-live" type="button">
-              See Live
-              <img src="./assets/secondIcon.svg" alt="" /></button
-            ><button class="action-btn see-source" type="button">
-              See Source
-              <img src="./assets/blugithub.svg" alt="" />
-            </button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <!--About myself section -->
-
-    <section class="about" id="about">
+    <!-- About-Yourself Section -->
+    <section id="about-section">
       <div class="about-container">
-        <div class="desktop-about">
-          <h2>About <br />myself</h2>
+        <div>
+          <h1>About Myself</h1>
           <p>
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
-          <p class="connect">LET'S CONNECT</p>
-          <ul class="socials icons about-socials">
-            <li>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-maxcdn" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa fa-hand-peace-o" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-          <button class="click">Get my resume</button>
-        </div>
-        <div class="desktop-stack">
-          <h3>
-            <span>Languages</span><img src="/assets/arrow.png" alt="" />
-          </h3>
-          <ul class="stack">
-            <li>
-              <img src="./assets/javaScript-logo.svg" alt="" />&nbsp;&nbsp;&nbsp;<span
-                class="stack-span"
-                >JavaScript</span
-              >
-            </li>
-            <li>
-              <img src="./assets/HTML-logo.svg" alt="" />&nbsp;&nbsp;&nbsp;<span
-                class="stack-span"
-                >HTML</span
-              >
-            </li>
-            <li>
-              <img src="./assets/CSS-logo.svg" alt="" />&nbsp;&nbsp;&nbsp;<span
-                class="stack-span"
-                >CSS</span
-              >
-            </li>
-          </ul>
 
-          <h3 class="frameworks">
-            <span>Frameworks</span><img src="./assets/Rightanglebracket.svg" alt="" />
-          </h3>
-          <h3 class="skills">
-            <span>Skills</span><img src="./assets/Rightanglebracket.svg" alt="" />
-          </h3>
+          <h4>LET’S CONNECT</h4>
+          <ul class="headline-icons">
+            <li>
+              <a href=""><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-medium-m"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angellist"></i></a>
+            </li>
+          </ul>
+          <button class="about-button">Get My Resume</button>
+        </div>
+
+        <div class="languages">
+          <div class="lang-caption">
+            <h5>Languages</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <div class="lang-lang">
+            <div class="lang">
+              <img
+                src="./assets/javaScript-logo.svg"
+                alt="javaScript"
+                width="30"
+                class="lang-img"
+              />
+              <p>Javascript</p>
+            </div>
+            <div class="lang">
+              <img
+                src="./assets/HTML-logo.svg"
+                alt="HTML"
+                width="30"
+                class="lang-img"
+              />
+              <p>HTML</p>
+            </div>
+            <div class="lang">
+              <img
+                src="./assets/CSS-logo.svg"
+                alt="CSS"
+                width="30"
+                class="lang-img"
+              />
+              <p>CSS</p>
+            </div>
+          </div>
+          <!-- lang-lang desktop -->
+          <div class="lang-lang-desktop">
+            <div class="lang">
+              <img
+                src="./assets/javaScript-logo.svg"
+                alt="javaScript"
+                width="30"
+                class="lang-img"
+              />
+              <p>Javascript</p>
+            </div>
+            <div class="lang">
+              <img
+                src="./assets/HTML-logo.svg"
+                alt="HTML"
+                width="30"
+                class="lang-img"
+              />
+              <p>HTML</p>
+            </div>
+            <div class="lang">
+              <img
+                src="./assets/CSS-logo.svg"
+                alt="CSS"
+                width="30"
+                class="lang-img"
+              />
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div class="lang-fra-skill">
+            <div class="lang-frameworks">
+              <h5>Frameworks</h5>
+              <i class="uil uil-angle-right"></i>
+            </div>
+            <div class="lang-skills">
+              <h5>Skills</h5>
+              <i class="uil uil-angle-right"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-  <!-- Footer Section -->
+    <!-- Footer Section -->
     <section id="footer">
-        <div class="footer">
-            <h2>Contact Me</h2>
-            <div class="contact">
-                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            </div>
-           <div>
-            <div class="form-div">
-                <form id="form" action="https://formspree.io/f/mqknjegg" method="post">
-                    <ul>
-                        <li><input class="f-name" type="text" value="" name="Name" placeholder="Name" maxlength="30" required></li>
-                        <li><input class="f-mail" type="email" value="" name="Email" placeholder="email@email.com" required></li>
-                        <li><textarea class="form-text" name="Message" cols="30" rows="10" placeholder="Enter Text Here" maxlength="500" required></textarea></li>
-                        <li><small class="error"></small></li>
-                        <li class="button-container"><button class="form-btn" type="submit">Get In Touch</button></li>
-                    </ul>
-                </form> 
-            </div>
-           </div>
+      <div class="footer">
+        <h2>Contact Me</h2>
+        <div class="contact">
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
         </div>
-        
-    </section>  </section>
-  </body>
-</html>
+        <div>
+          <div class="form-div">
+            <form id="form" action="https://formspree.io/f/mqknjegg"></form>
+            <ul>
+              <li>
+                <input
+                  class="f-name"
+                  type="text"
+                  value=""
+                  name="Name"
+                  placeholder="Name"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="f-mail"
+                  type="email"
+                  value=""
+                  name="Email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  id="form-text"
+                  name="Message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </li>
+              <li><small class="error"></small></li>
+              <li class="button-container">
+                <button class="form-btn" type="submit">Get In Touch</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script/index.js"></script>
+    <!-- Popup -->
+    <div id="popup-1" class="popup">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="popup()">&times;</div>
+        <h1>Tonic</h1>
+        <ul id="popup-first-list">
+          <li>Canopy</li>
+          <li>Backend Dev</li>
+          <li>2015</li>
+        </ul>
+        <img class="popper-img" src="./assets/card3.svg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+          earum consequatur ut repudiandae atque aut magnam provident quos,
+          ullam sed? Voluptate excepturi, nesciunt dolore quia dolorem nostrum
+          error in quam, laudantium perspiciatis amet facere doloremque
+          recusandae quis. Obcaecati, maiores sapiente?
+        </p>
+        <ul class="popup-ul">
+          <li class="popup-li">HTML</li>
+          <li class="popup-li">CSS</li>
+          <li class="popup-li">Javascript</li>
+        </ul>
+        <div class="popup-div">
+          <button>See Free <i class="uil uil-power"></i></button>
+          <button>See Source <i class="uil uil-github"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
