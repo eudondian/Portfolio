@@ -670,7 +670,7 @@ small {
     gap: 10%;
     background: white;
     padding-left: 25px;
-    width: 90%;
+    width: 100%;
   }
 
   .card:hover {

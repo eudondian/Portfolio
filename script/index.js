@@ -27,75 +27,76 @@ menu.addEventListener('click', () => {
 
 const cards = [
   {
-    img: './assets/DV-card1.svg',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    img: './assets/Js-Capstone.png',
+    title: 'Movie App',
+    company: ['CANOPY', 'Backend Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/DV-card2.svg',
-    title: 'Multi-Post Stories',
+    img: './assets/leaderboard.png',
+    title: 'Leader Board',
     company: ['FACEBOOK', 'Fullstack Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
+    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/DV-card3.svg',
-    title: 'Facebook 360',
+    img: '../assets/math-magician.png',
+    title: 'Math Magician',
     company: ['FACEBOOK', 'Fullstack Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
+    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/DV-card4.svg',
-    title: 'Uber Navigation',
+    img: './assets/Final-Capstone-Project.png',
+    title: 'Furniture Mall App',
     company: ['UBER', 'Lead Developer', '2018'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
+    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
+    link: 'https://example.com/your-project-link'
   },
 ];
 
 const cardsMobile = [
   {
-    img: './assets/card1.png',
+    img: './assets/js-Capstone.png',
     title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    company: ['CANOPY', 'Backend Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/Card2.png',
+    img: './assets/leaderboard.png',
     title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    company: ['CANOPY', 'Backend Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/Card3.png',
+    img: './',
     title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    company: ['CANOPY', 'Backend Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
     button: 'See Project',
   },
   {
-    img: './assets/Card4.png',
+    img: './assets/Final Capstone Project.png',
     title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    company: ['CANOPY', 'Backend Dev', '2023'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
