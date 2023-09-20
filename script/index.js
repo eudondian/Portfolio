@@ -48,7 +48,7 @@ const cards = [
     live: 'https://eudondian.github.io/Leaderboard/'
   },
   {
-    img: '../assets/math-magician.png',
+    img: '../assets/B',
     title: 'Math Magician',
     company: ['MICROVERSE', 'Fullstack Dev', '2022'],
     description:
