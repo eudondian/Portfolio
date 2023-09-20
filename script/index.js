@@ -1,5 +1,4 @@
 // Toggle Nav Menu
-
 const menu = document.querySelector('.nav-menu');
 const menuBtn = document.querySelector('#open-menu-btn');
 const closeBtn = document.querySelector('#close-menu-btn');
@@ -29,142 +28,113 @@ const cards = [
   {
     img: './assets/Js-Capstone.png',
     title: 'Movie App',
-    company: ['CANOPY', 'Backend Dev', '2022'],
+    company: ['MICROVERSE', 'front-end Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/JavaScript-capstone',
+    live: 'https://abass-rashid.github.io/capstone-project-2/dist/'
   },
   {
     img: './assets/leaderboard.png',
     title: 'Leader Board',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
+    company: ['MICROVERSE', 'Fullstack Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'App that compares the score accepted from the user with data in the API and places the newly scored value in a sorted manner.',
     languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/Leaderboard',
+    live: 'https://eudondian.github.io/Leaderboard/'
   },
   {
     img: '../assets/math-magician.png',
     title: 'Math Magician',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
+    company: ['MICROVERSE', 'Fullstack Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
+      'The app allows users to maintain a record of transactions categorized by type. This enables users to track their expenditure, providing insights into their spending patterns and categories..',
+    languages: ['Ruby', 'Ruby on rails', 'Bootstrap'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/Budget-App',
+    live: 'https://render-yaml-t7ma.onrender.com/'
   },
   {
     img: './assets/Final-Capstone-Project.png',
     title: 'Furniture Mall App',
-    company: ['UBER', 'Lead Developer', '2018'],
+    company: ['MICROVERSE', 'Lead Developer', '2023'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
-    link: 'https://example.com/your-project-link'
+    link: 'https://github.com/anbehindY/furniture-mall-frontend',
+    live: 'https://github.com/anbehindY/furniture-mall-frontend'
   },
 ];
 
-const cardsMobile = [
-  {
-    img: './assets/js-Capstone.png',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2022'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'CSS', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './assets/leaderboard.png',
-    title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2022'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2022'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './assets/Final Capstone Project.png',
-    title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2023'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-];
 
 const worksContainer = document.querySelector('#cards-desktop');
+const popper = document.querySelector('#popup-1');
+
 cards.forEach((item) => {
   const workCards = document.createElement('div');
   workCards.innerHTML = `  
-     
-     <div class="card">
+    <div class="card">
       <img src=${item.img} alt="Card One" width="550">
       <div class="container">
-          <h2><b>${item.title}</b></h2>
-              <ul class="card-list-one">
-                  <li>${item.company[0]}</li>
-                  <li class="card-list">${item.company[1]}</li>
-                  <li class="card-list">${item.company[2]}</li>
-              </ul>
-          <p>${item.description}</p>
-          <ul class="card-list-two">
-              <li>${item.languages[0]}</li>
-              <li>${item.languages[1]}</li>
-              <li>${item.languages[2]}</li>
-          </ul>
-          <div class="card-button"  onclick="popup()">${item.button}</div>
+        <h2><b>${item.title}</b></h2>
+        <ul class="card-list-one">
+          <li>${item.company[0]}</li>
+          <li class="card-list">${item.company[1]}</li>
+          <li class="card-list">${item.company[2]}</li>
+        </ul>
+        <p>${item.description}</p>
+        <ul class="card-list-two">
+          <li>${item.languages[0]}</li>
+          <li>${item.languages[1]}</li>
+          <li>${item.languages[2]}</li>
+        </ul>
+        <div class="card-button" onclick="openPopup('${item.title}', '${item.description}', '${item.link}', '${item.company}', '${item.live}', '${item.img}')">${item.button}</div>
       </div>
-  </div>
-    `;
+    </div>
+  `;
 
   worksContainer.appendChild(workCards);
 });
 
-const worksMobile = document.querySelector('#cards');
-cardsMobile.forEach((mobItem) => {
-  const workCardsMobile = document.createElement('div');
-  workCardsMobile.innerHTML = `  
-     
-    <div class="card">
-      <img src=${mobItem.img} alt="Card One" style="width:100%">
-      <div class="container">
-          <h2><b>${mobItem.title}</b></h2>
-              <ul class="card-list-one">
-                  <li>${mobItem.company[0]}</li>
-                  <li class="card-list">${mobItem.company[1]}</li>
-                  <li class="card-list">${mobItem.company[2]}</li>
-              </ul>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="card-list-two">
-              <li>${mobItem.languages[0]}</li>
-              <li>${mobItem.languages[1]}</li>
-              <li>${mobItem.languages[2]}</li>
-          </ul>
-          <div class="card-button" onclick="popup()">${mobItem.button}</div>
+function openPopup(title, description, link, company, live, img) {
+  const popupContent = `
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="closePopup()">&times;</div>
+      <h1>${title}</h1>
+      <ul id="popup-first-list">
+        <li>${company[0]}</li>
+        <li>${company[1]}</li>
+        <li>${company[2]}</li>
+      </ul>
+      <img class="popper-img" src="${img}" alt="" />
+      <p>
+        ${description}
+      </p>
+      <ul class="popup-ul">
+        <li class="popup-li">HTML</li>
+        <li class="popup-li">CSS</li>
+        <li class="popup-li">Javascript</li>
+      </ul>
+      <div class="popup-div">
+        <button><a href="${link}" target="_blank">See Free <i class="uil uil-power"></i></a></button>
+        <button><a href="${live}" target="_blank">See Source <i class="uil uil-github"></i></a></button>
       </div>
     </div>
-    `;
+  `;
+  popper.innerHTML = popupContent;
+  popper.classList.add('active');
+}
 
-  worksMobile.appendChild(workCardsMobile);
-});
 
-const popper = document.querySelector('#popup-1');
 
-// eslint-disable-next-line no-unused-vars
-function popup() {
-  popper.classList.toggle('active');
+function closePopup() {
+  popper.classList.remove('active');
 }
 
 // form validation
