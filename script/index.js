@@ -28,7 +28,7 @@ const cards = [
   {
     img: './assets/Js-Capstone.png',
     title: 'Movie App',
-    company: ['MICROVERSE', 'front-end Dev', '2022'],
+    company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
@@ -39,20 +39,20 @@ const cards = [
   {
     img: './assets/leaderboard.png',
     title: 'Leader Board',
-    company: ['MICROVERSE', 'Fullstack Dev', '2022'],
+    company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
-      'App that compares the score accepted from the user with data in the API and places the newly scored value in a sorted manner.',
-    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
+      'This is an API based leaderboard application It compares the score accepted from the user with data in the API and place the newly scored value in a sorted manner.',
+    languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/eudondian/Leaderboard',
     live: 'https://eudondian.github.io/Leaderboard/'
   },
   {
-    img: '../assets/B',
-    title: 'Math Magician',
-    company: ['MICROVERSE', 'Fullstack Dev', '2022'],
+    img: '../assets/Budget-app.png',
+    title: 'Budget-App',
+    company: ['MICROVERSE', 'Fullstack Dev', '2023'],
     description:
-      'The app allows users to maintain a record of transactions categorized by type. This enables users to track their expenditure, providing insights into their spending patterns and categories..',
+      'The application allows users to maintain a record of transactions categorized by type. This enables users to track their expenditure, providing insights into their spending patterns and categories.',
     languages: ['Ruby', 'Ruby on rails', 'Bootstrap'],
     button: 'See Project',
     link: 'https://github.com/eudondian/Budget-App',
@@ -61,10 +61,10 @@ const cards = [
   {
     img: './assets/Final-Capstone-Project.png',
     title: 'Furniture Mall App',
-    company: ['MICROVERSE', 'Lead Developer', '2023'],
+    company: ['MICROVERSE', 'Fullstack Dev', '2023'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'CSS', 'Javascript'],
+      'The app functions as a scheduler for booking furniture mall appointments. Users can log in, browse furniture listings with prices and descriptions, reserve items, and cancel reservations. The frontend, built with React, communicates with the Rails-based Furniture-mall-backend through an API to display furniture data to users.',
+    languages: ['React/redux', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/anbehindY/furniture-mall-frontend',
     live: 'https://github.com/anbehindY/furniture-mall-frontend'
@@ -79,7 +79,7 @@ cards.forEach((item) => {
   const workCards = document.createElement('div');
   workCards.innerHTML = `  
     <div class="card">
-      <img src=${item.img} alt="Card One" width="550">
+      <img src=${item.img} alt="Card One" class="main-img">
       <div class="container">
         <h2><b>${item.title}</b></h2>
         <ul class="card-list-one">
@@ -101,17 +101,12 @@ cards.forEach((item) => {
   worksContainer.appendChild(workCards);
 });
 
-function openPopup(title, description, link, company, live, img) {
+function openPopup(title, description, link, _company, live, img) {
   const popupContent = `
     <div class="overlay"></div>
     <div class="content">
       <div class="close-btn" onclick="closePopup()">&times;</div>
       <h1>${title}</h1>
-      <ul id="popup-first-list">
-        <li>${company[0]}</li>
-        <li>${company[1]}</li>
-        <li>${company[2]}</li>
-      </ul>
       <img class="popper-img" src="${img}" alt="" />
       <p>
         ${description}
