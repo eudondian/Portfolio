@@ -11,6 +11,10 @@ body {
   background-color: #f7f7f9;
 }
 
+.main-img {
+  width: 100%;
+}
+
 /* #container{
   width: 94%;
 } */
@@ -25,7 +29,7 @@ p {
 }
 
 #wrapper {
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   background-color: rgba(255, 255, 2255, 0.9);
   border-bottom-left-radius: 100px;
@@ -99,6 +103,8 @@ p {
 #headline p {
   width: 90%;
   position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
   z-index: 1;
 }
 
@@ -122,6 +128,10 @@ p {
   margin-right: 10px;
 }
 
+.headline-icons li a {
+  color: #6070ff;
+}
+
 /* Works */
 #cards {
   margin-top: 10vh;
@@ -134,10 +144,9 @@ p {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid rgb(226, 221, 221);
-  height: 90%;
-  width: 100%;
+  width: 90%;
   color: #344563;
-  margin-bottom: 10vh;
+  margin-bottom: 10%;
 }
 
 .container h2 {
@@ -149,8 +158,8 @@ p {
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 10px;
-  width: 30vh;
   font-size: 13px;
+  gap: 0px;
 }
 
 .card-list-two li {
@@ -341,7 +350,7 @@ textarea {
   float: left;
   margin-bottom: 20px;
   margin-top: 1.5rem;
-  margin-left: 56px;
+  margin-left: 110px;
   border: 1px solid #396df2;
   border-radius: 5px;
   color: #396df2;
@@ -360,7 +369,11 @@ textarea {
 }
 
 #cards-desktop {
-  display: none;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-top: 80px;
+  padding-left: 50px;
 }
 
 .lang-lang-desktop {
@@ -401,7 +414,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background: rgba(26, 84, 231, 0.8);
   display: none;
   overflow: auto;
@@ -419,9 +432,6 @@ textarea {
 }
 
 /* Popup */
-.popup {
-  height: 80vh;
-}
 
 .popup .overlay {
   position: fixed;
@@ -448,14 +458,13 @@ textarea {
 }
 
 .popup .content {
-  position: absolute;
-  margin: 60% 0;
+  position: fixed;
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%) scale(0);
   background: white;
   width: 80%;
-  height: 100%;
+  height: 96%;
   z-index: 2;
   text-align: justify;
   padding: 20px;
@@ -508,7 +517,8 @@ textarea {
 
 .popup img {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 20px;
+  height: 10pc;
 }
 
 .popup-li {
@@ -548,7 +558,7 @@ small {
 
   #wrapper {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     border-bottom-left-radius: 100px;
     position: relative;
     background-image: url(/assets/wrapper-background/Header\ bg.svg);
@@ -569,12 +579,28 @@ small {
       animation: 5s infinite alternate anima;
     } */
   .nav {
-    margin-left: 100px;
-    height: 20vh;
+    height: 12vh;
+    position: fixed;
+    background-color: #fff;
+    margin-top: -31px;
+    width: 100%;
+    z-index: 2;
   }
 
+
+  .main-img {
+    width: 550px;
+  }
   #mobile-nav {
     display: none;
+  }
+
+  .logo {
+    margin-top: -12px;
+  }
+
+  .logo img {
+    width: 18%;
   }
 
   #headline {
@@ -627,6 +653,7 @@ small {
 
   #header-desktop ul {
     display: flex;
+    margin-top: 20px;
   }
 
   .card-list-one li {
@@ -666,6 +693,13 @@ small {
   }
 
   .card {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgb(226, 221, 221);
+    height: 90%;
+    width: 100%;
+    color: #344563;
+    margin-bottom: 10vh;
     display: flex;
     gap: 10%;
     background: white;
@@ -699,6 +733,12 @@ small {
     padding-left: 200px;
   }
 
+  .popup img {
+    width: 80%;
+    margin-top: 20px;
+    height: 50%;
+  }
+
   .lang-lang {
     display: none;
   }
@@ -724,7 +764,6 @@ small {
     position: relative;
     width: 100%;
     border-top-left-radius: 100px;
-    height: 100vh;
     padding: 0 600px;
   }
 
@@ -799,14 +838,13 @@ small {
   }
 
   .popup .content {
-    position: absolute;
-    margin: 60% auto;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: white;
-    width: 450px;
-    height: 120%;
+    width: 80%;
+    height: 95%;
     z-index: 2;
     text-align: justify;
     padding: 20px;
