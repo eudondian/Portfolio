@@ -13,6 +13,7 @@ body {
 
 .main-img {
   width: 100%;
+  height: auto;
 }
 
 /* #container{
@@ -53,6 +54,8 @@ p {
 /* Header Section */
 #header {
   padding: 1rem;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .nav {
@@ -69,24 +72,24 @@ p {
 /* Headline Section */
 #headline {
   margin-top: 2rem;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .content h1 {
   color: #6070ff;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 #headline h1 {
-  font-size: 35px;
-  max-width: 10rem;
+  font-size: 28px;
+  max-width: 100%;
   color: #333231;
   z-index: 1;
   position: relative;
 }
 
 .container p {
-  width: 95%;
+  width: 100%;
 }
 
 .footer p {
@@ -302,6 +305,7 @@ caption {
   position: relative;
   width: 100%;
   border-top-left-radius: 65px;
+  padding: 1rem;
 }
 
 #footer::after {
@@ -398,12 +402,15 @@ textarea {
 
 #mobile-nav {
   margin-bottom: -32px;
+  font-size: 1.8rem;
   color: #6070ff;
+  cursor: pointer;
 }
 
 .nav__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px;
   background-color: white;
   position: relative;
@@ -444,7 +451,7 @@ textarea {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
   z-index: 1;
-  display: none;
+  display: block;
   overflow: auto;
 }
 
@@ -463,11 +470,11 @@ textarea {
 .popup .content {
   position: fixed;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: white;
   width: 80%;
-  height: 96%;
+  height: 95%;
   z-index: 2;
   text-align: justify;
   padding: 20px;
@@ -475,8 +482,8 @@ textarea {
 
 .popup .close-btn {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   width: 30px;
   height: 30px;
   background: #6070ff;
