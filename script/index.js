@@ -1,5 +1,4 @@
 // Toggle Nav Menu
-
 const menu = document.querySelector('.nav-menu');
 const menuBtn = document.querySelector('#open-menu-btn');
 const closeBtn = document.querySelector('#close-menu-btn');
@@ -27,143 +26,107 @@ menu.addEventListener('click', () => {
 
 const cards = [
   {
-    img: './assets/DV-card1.svg',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    img: './assets/Js-Capstone.png',
+    title: 'Movie App',
+    company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This app involved the creation of a movie web application that utilizes an external API. This web application comprises two user interfaces..',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/JavaScript-capstone',
+    live: 'https://abass-rashid.github.io/capstone-project-2/dist/',
   },
   {
-    img: './assets/DV-card2.svg',
-    title: 'Multi-Post Stories',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
+    img: './assets/leaderboard.png',
+    title: 'Leader Board',
+    company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './assets/DV-card3.svg',
-    title: 'Facebook 360',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './assets/DV-card4.svg',
-    title: 'Uber Navigation',
-    company: ['UBER', 'Lead Developer', '2018'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-];
-
-const cardsMobile = [
-  {
-    img: './assets/card1.png',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This is an API based leaderboard application It compares the score accepted from the user with data in the API and place the newly scored value in a sorted manner.',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/Leaderboard',
+    live: 'https://eudondian.github.io/Leaderboard/',
   },
   {
-    img: './assets/Card2.png',
-    title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    img: '../assets/Budget-app.png',
+    title: 'Budget-App',
+    company: ['MICROVERSE', 'Fullstack Dev', '2023'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
+      'The application allows users to maintain a record of transactions categorized by type. This enables users to track their expenditure, providing insights into their spending patterns and categories.',
+    languages: ['Ruby', 'Ruby on rails', 'Bootstrap'],
     button: 'See Project',
+    link: 'https://github.com/eudondian/Budget-App',
+    live: 'https://render-yaml-t7ma.onrender.com/',
   },
   {
-    img: './assets/Card3.png',
-    title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    img: './assets/Final-Capstone-Project.png',
+    title: 'Furniture Mall App',
+    company: ['MICROVERSE', 'Fullstack Dev', '2023'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
+      'The app functions as a scheduler for booking furniture mall appointments. Users can log in, browse furniture listings with prices and descriptions, reserve items, and cancel reservations. The frontend, built with React, communicates with the Rails-based Furniture-mall-backend through an API to display furniture data to users.',
+    languages: ['React/redux', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
-  },
-  {
-    img: './assets/Card4.png',
-    title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
+    link: 'https://github.com/anbehindY/furniture-mall-frontend',
+    live: 'https://github.com/anbehindY/furniture-mall-frontend',
   },
 ];
 
 const worksContainer = document.querySelector('#cards-desktop');
+const popper = document.querySelector('#popup-1');
+
 cards.forEach((item) => {
   const workCards = document.createElement('div');
   workCards.innerHTML = `  
-     
-     <div class="card">
-      <img src=${item.img} alt="Card One" width="550">
+    <div class="card">
+      <img src=${item.img} alt="Card One" class="main-img">
       <div class="container">
-          <h2><b>${item.title}</b></h2>
-              <ul class="card-list-one">
-                  <li>${item.company[0]}</li>
-                  <li class="card-list">${item.company[1]}</li>
-                  <li class="card-list">${item.company[2]}</li>
-              </ul>
-          <p>${item.description}</p>
-          <ul class="card-list-two">
-              <li>${item.languages[0]}</li>
-              <li>${item.languages[1]}</li>
-              <li>${item.languages[2]}</li>
-          </ul>
-          <div class="card-button"  onclick="popup()">${item.button}</div>
+        <h2><b>${item.title}</b></h2>
+        <ul class="card-list-one">
+          <li>${item.company[0]}</li>
+          <li class="card-list">${item.company[1]}</li>
+          <li class="card-list">${item.company[2]}</li>
+        </ul>
+        <p>${item.description}</p>
+        <ul class="card-list-two">
+          <li>${item.languages[0]}</li>
+          <li>${item.languages[1]}</li>
+          <li>${item.languages[2]}</li>
+        </ul>
+        <div class="card-button" onclick="openPopup('${item.title}', '${item.description}', '${item.link}', '${item.company}', '${item.live}', '${item.img}')">${item.button}</div>
       </div>
-  </div>
-    `;
+    </div>
+  `;
 
   worksContainer.appendChild(workCards);
 });
 
-const worksMobile = document.querySelector('#cards');
-cardsMobile.forEach((mobItem) => {
-  const workCardsMobile = document.createElement('div');
-  workCardsMobile.innerHTML = `  
-     
-    <div class="card">
-      <img src=${mobItem.img} alt="Card One" style="width:100%">
-      <div class="container">
-          <h2><b>${mobItem.title}</b></h2>
-              <ul class="card-list-one">
-                  <li>${mobItem.company[0]}</li>
-                  <li class="card-list">${mobItem.company[1]}</li>
-                  <li class="card-list">${mobItem.company[2]}</li>
-              </ul>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="card-list-two">
-              <li>${mobItem.languages[0]}</li>
-              <li>${mobItem.languages[1]}</li>
-              <li>${mobItem.languages[2]}</li>
-          </ul>
-          <div class="card-button" onclick="popup()">${mobItem.button}</div>
+function openPopup(title, description, link, _company, live, img) {
+  const popupContent = `
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="closePopup()">&times;</div>
+      <h1>${title}</h1>
+      <img class="popper-img" src="${img}" alt="" />
+      <p>
+        ${description}
+      </p>
+      <ul class="popup-ul">
+        <li class="popup-li">HTML</li>
+        <li class="popup-li">CSS</li>
+        <li class="popup-li">Javascript</li>
+      </ul>
+      <div class="popup-div">
+        <button><a href="${link}" target="_blank">See Free <i class="uil uil-power"></i></a></button>
+        <button><a href="${live}" target="_blank">See Source <i class="uil uil-github"></i></a></button>
       </div>
     </div>
-    `;
+  `;
+  popper.innerHTML = popupContent;
+  popper.classList.add('active');
+}
 
-  worksMobile.appendChild(workCardsMobile);
-});
-
-const popper = document.querySelector('#popup-1');
-
-// eslint-disable-next-line no-unused-vars
-function popup() {
-  popper.classList.toggle('active');
+function closePopup() {
+  popper.classList.remove('active');
 }
 
 // form validation
