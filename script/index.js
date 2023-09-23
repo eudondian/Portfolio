@@ -48,7 +48,7 @@ const cards = [
     live: 'https://eudondian.github.io/Leaderboard/',
   },
   {
-    img: '../assets/Budget-app.png',
+    img: './assets/Budget-app.png',
     title: 'Budget-App',
     company: ['MICROVERSE', 'Fullstack Dev', '2023'],
     description:

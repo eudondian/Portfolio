@@ -78,7 +78,7 @@ p {
 }
 
 #headline h1 {
-  font-size: 24px;
+  font-size: 35px;
   max-width: 10rem;
   color: #333231;
   z-index: 1;
@@ -105,6 +105,8 @@ p {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 20px;
   z-index: 1;
 }
 
@@ -697,7 +699,7 @@ small {
     border-radius: 8px;
     border: 1px solid rgb(226, 221, 221);
     height: 90%;
-    width: 100%;
+    width: 90%;
     color: #344563;
     margin-bottom: 10vh;
     display: flex;
