@@ -111,9 +111,10 @@ p {
 #headline h4 {
   margin-top: 8px;
   color: #6070ff;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   z-index: 1;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .headline-icons {
@@ -159,7 +160,7 @@ p {
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 13px;
-  gap: 0px;
+  gap: 0;
 }
 
 .card-list-two li {
@@ -236,7 +237,7 @@ p {
 #about-section h4 {
   margin-top: 8px;
   color: #6070ff;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .about-button {
@@ -575,9 +576,9 @@ small {
     background-color: rgba(255, 255, 255, 0.9);
   }
 
-  /* .logo{
+   .logo{
       animation: 5s infinite alternate anima;
-    } */
+    } 
   .nav {
     height: 12vh;
     position: fixed;
@@ -587,10 +588,10 @@ small {
     z-index: 2;
   }
 
-
   .main-img {
     width: 550px;
   }
+
   #mobile-nav {
     display: none;
   }
@@ -690,6 +691,7 @@ small {
     justify-content: center;
     margin-top: 80px;
     padding-left: 50px;
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   .card {
@@ -704,7 +706,6 @@ small {
     gap: 10%;
     background: white;
     padding-left: 25px;
-    width: 100%;
   }
 
   .card:hover {
@@ -713,6 +714,7 @@ small {
 
   .card-list-one {
     width: 60%;
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   .container {
@@ -865,9 +867,31 @@ small {
     color: #6070ff;
   }
 
-  to {
+  100% {
     margin-left: 0%;
     width: 100%;
     font-weight: bold;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -30,7 +30,7 @@ const cards = [
     title: 'Movie App',
     company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This app involved the creation of a movie web application that utilizes an external API. This web application comprises two user interfaces..',
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/eudondian/JavaScript-capstone',
