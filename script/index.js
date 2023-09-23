@@ -34,7 +34,7 @@ const cards = [
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/eudondian/JavaScript-capstone',
-    live: 'https://abass-rashid.github.io/capstone-project-2/dist/'
+    live: 'https://abass-rashid.github.io/capstone-project-2/dist/',
   },
   {
     img: './assets/leaderboard.png',
@@ -45,7 +45,7 @@ const cards = [
     languages: ['html', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/eudondian/Leaderboard',
-    live: 'https://eudondian.github.io/Leaderboard/'
+    live: 'https://eudondian.github.io/Leaderboard/',
   },
   {
     img: '../assets/Budget-app.png',
@@ -56,7 +56,7 @@ const cards = [
     languages: ['Ruby', 'Ruby on rails', 'Bootstrap'],
     button: 'See Project',
     link: 'https://github.com/eudondian/Budget-App',
-    live: 'https://render-yaml-t7ma.onrender.com/'
+    live: 'https://render-yaml-t7ma.onrender.com/',
   },
   {
     img: './assets/Final-Capstone-Project.png',
@@ -67,10 +67,9 @@ const cards = [
     languages: ['React/redux', 'Ruby on rails', 'CSS', 'Javascript'],
     button: 'See Project',
     link: 'https://github.com/anbehindY/furniture-mall-frontend',
-    live: 'https://github.com/anbehindY/furniture-mall-frontend'
+    live: 'https://github.com/anbehindY/furniture-mall-frontend',
   },
 ];
-
 
 const worksContainer = document.querySelector('#cards-desktop');
 const popper = document.querySelector('#popup-1');
@@ -125,8 +124,6 @@ function openPopup(title, description, link, _company, live, img) {
   popper.innerHTML = popupContent;
   popper.classList.add('active');
 }
-
-
 
 function closePopup() {
   popper.classList.remove('active');
