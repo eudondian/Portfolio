@@ -12,8 +12,8 @@ body {
 }
 
 .main-img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* #container{
@@ -203,7 +203,7 @@ p {
 
 .card-list-two {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   margin-top: 15px;
   width: 50vh;
 }
@@ -561,7 +561,7 @@ small {
 }
 
 /* Desktop */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   #container {
     width: 100%;
   }
@@ -774,18 +774,6 @@ small {
     width: 100%;
     border-top-left-radius: 100px;
     padding: 0 600px;
-  }
-
-  #footer::after {
-    position: absolute;
-    content: ' ';
-    width: 100vh;
-    height: 100%;
-    z-index: 0;
-    background-image: url(./assets/wrapper-background/Header\ bg@2x.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-left-radius: 100px;
   }
 
   .footer {
