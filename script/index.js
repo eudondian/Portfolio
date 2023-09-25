@@ -37,7 +37,7 @@ const cards = [
     live: 'https://abass-rashid.github.io/capstone-project-2/dist/',
   },
   {
-    img: './assets/leaderboard',
+    img: './assets/leaderboard.png',
     title: 'Leader Board',
     company: ['MICROVERSE', 'Frontend Dev', '2022'],
     description:
