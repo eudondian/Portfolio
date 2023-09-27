@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f7f7f9;
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -720,7 +720,7 @@ small {
 
   /* About Myself */
   #about-section {
-    height: 150vh;
+    max-height: 100vh;
   }
 
   .about-container {
