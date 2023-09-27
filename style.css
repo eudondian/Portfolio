@@ -94,6 +94,7 @@ p {
   color: #333231;
   z-index: 1;
   position: relative;
+  max-height: 100vh;
 }
 
 .container p {
@@ -239,7 +240,6 @@ p {
   width: 100%;
   padding: 30px;
   max-height: 100vh;
-  overflow-y: auto;
 }
 
 #about-section h1 {
@@ -313,6 +313,7 @@ caption {
   width: 100%;
   border-top-left-radius: 65px;
   padding: 1rem;
+  margin-top: 500px;
 }
 
 .footer {
