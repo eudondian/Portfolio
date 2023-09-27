@@ -10,7 +10,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f7f7f9;
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+  
 }
 
 .main-img {
@@ -41,6 +42,7 @@ p {
   background-color: rgba(255, 255, 2255, 0.9);
   border-bottom-left-radius: 100px;
   position: relative;
+  
 }
 
 #wrapper::after {
@@ -232,11 +234,12 @@ p {
 /* About-Yourself Section */
 #about-section {
   margin-top: 2rem 0;
-  height: 150vh;
   background: white;
   border-top-right-radius: 70px;
   width: 100%;
   padding: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 #about-section h1 {
@@ -552,9 +555,6 @@ small {
 
 /* Desktop */
 @media screen and (min-width: 769px) {
-body{
-  font-size: 20px;
-}
 
   #container {
     width: 100%;
@@ -724,8 +724,8 @@ body{
 
   /* About Myself */
   #about-section {
-    max-height: 100vh;
-    overflow-y: auto;
+    max-height: 100%;
+       
   }
 
   .about-container {
