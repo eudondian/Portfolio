@@ -234,6 +234,7 @@ p {
 /* About-Yourself Section */
 #about-section {
   margin-top: 2rem 0;
+  max-height: 100vh;
   background: white;
   border-top-right-radius: 70px;
   width: 100%;
