@@ -552,6 +552,10 @@ small {
 
 /* Desktop */
 @media screen and (min-width: 769px) {
+body{
+  font-size: 20px;
+}
+
   #container {
     width: 100%;
   }
