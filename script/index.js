@@ -116,8 +116,8 @@ function openPopup(title, description, link, _company, live, img) {
         <li class="popup-li">Javascript</li>
       </ul>
       <div class="popup-div">
-        <button><a href="${link}" target="_blank">See Free <i class="uil uil-power"></i></a></button>
-        <button><a href="${live}" target="_blank">See Source <i class="uil uil-github"></i></a></button>
+        <button><a href="${live}" target="_blank">See live <i class="uil uil-power"></i></a></button>
+        <button><a href="${link}" target="_blank">See Source <i class="uil uil-github"></i></a></button>
       </div>
     </div>
   `;
@@ -127,6 +127,7 @@ function openPopup(title, description, link, _company, live, img) {
 
 function closePopup() {
   popper.classList.remove('active');
+  location.reload()
 }
 
 // form validation

@@ -94,7 +94,6 @@ p {
   color: #333231;
   z-index: 1;
   position: relative;
-  max-height: 100vh;
 }
 
 .container p {
@@ -240,6 +239,7 @@ p {
   width: 100%;
   padding: 30px;
   max-height: 100vh;
+  margin-bottom: 100px;
 }
 
 #about-section h1 {
