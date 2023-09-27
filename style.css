@@ -232,7 +232,7 @@ p {
 /* About-Yourself Section */
 #about-section {
   margin-top: 2rem 0;
-  height: 120vh;
+  height: 150vh;
   background: white;
   border-top-right-radius: 70px;
   width: 100%;
@@ -305,7 +305,6 @@ caption {
 
 /* Footer section */
 #footer {
-  margin-top: 480px;
   text-align: center;
   background-color: #6070ff;
   width: 100%;
@@ -721,7 +720,7 @@ small {
 
   /* About Myself */
   #about-section {
-    height: 120vh;
+    height: 150vh;
   }
 
   .about-container {
