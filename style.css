@@ -9,11 +9,17 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f7f7f9;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .main-img {
   max-width: 100%;
   display: block;
+}
+
+.form-ul {
+  list-style-type: none;
 }
 
 /* #container{
@@ -299,27 +305,12 @@ caption {
 
 /* Footer section */
 #footer {
-  margin-top: 100px;
+  margin-top: 480px;
   text-align: center;
   background-color: #6070ff;
-  position: relative;
   width: 100%;
   border-top-left-radius: 65px;
   padding: 1rem;
-}
-
-#footer::after {
-  position: absolute;
-  content: ' ';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-image: url(/assets/header-shapes\ mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 65px;
 }
 
 .footer {
